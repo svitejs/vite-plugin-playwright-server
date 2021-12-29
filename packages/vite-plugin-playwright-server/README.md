@@ -1,6 +1,6 @@
 # @svitejs/vite-plugin-playwright-server
 
-PROJECT TAGLINE HERE
+starts a playwright browser server alongside vite
 
 ## Installation
 

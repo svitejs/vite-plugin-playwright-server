@@ -34,10 +34,22 @@
   },
   "homepage": "https://github.com/svitejs/vite-plugin-playwright-server/tree/main/packages/vite-plugin-playwright-server#readme",
   "peerDependencies": {
-    "vite": "^2.7.9"
+    "vite": "^2.7.9",
+    "playwright-chromium": "^1.17.1",
+    "playwright-core": "^1.17.1"
+  },
+  "peerDependenciesMeta": {
+    "playwright-chromium": {
+      "optional": true
+    },
+    "playwright-core": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "vite": "^2.7.9",
-    "vitest": "^0.0.118"
+    "vitest": "^0.0.122",
+    "playwright-core": "^1.17.1",
+    "playwright-chromium": "^1.17.1"
   }
 }

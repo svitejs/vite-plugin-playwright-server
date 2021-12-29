@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "pnpm --dir packages/vite-plugin-playwright-server dev",
-    "build": "pnpm -r build",
-    "test": "pnpm -r test --workspace-concurrency=1",
+    "build": "pnpm --dir packages/vite-plugin-playwright-server build",
+    "test": "pnpm --dir packages/vite-plugin-playwright-server test",
     "lint": "eslint --ignore-path .gitignore '**/*.{js,ts,html,md}'",
     "lint:fix": "pnpm run lint -- --fix",
     "format": "prettier --ignore-path .gitignore '**/*.{css,scss,html,js,ts,md}' --check",
@@ -34,6 +34,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
+    "tsup": "^5.11.9",
     "typescript": "^4.5.4",
     "vite": "^2.7.9",
     "vitest": "^0.0.118"
