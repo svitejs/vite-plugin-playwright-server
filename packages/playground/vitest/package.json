@@ -1,0 +1,17 @@
+{
+  "name": "playground-vitest",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@svitejs/vite-plugin-playwright-server": "workspace:*",
+    "playwright-chromium": "^1.17.1",
+    "vite": "^2.7.2",
+    "vitest": "^0.0.122"
+  }
+}
