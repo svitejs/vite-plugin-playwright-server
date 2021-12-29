@@ -1,14 +1,12 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { Browser, Page } from 'playwright-chromium';
+import { getBrowser } from '@svitejs/vite-plugin-playwright-server';
 
 describe('index', () => {
 	let page: Page;
 	beforeAll(async () => {
-		// TODO how to get browser from playwrightServer plugin api in here
-		// needs shared global context in vitest
-		// importing from playwrightServer does not work
-		const browser: Browser = undefined; //????;
-		page = browser.newPage();
+		const browser: Browser = await getBrowser();
+		page = await browser.newPage();
 		await page.goto('http://localhost:3000', { waitUntil: 'networkidle' });
 	});
 	afterAll(async () => {
